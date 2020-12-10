@@ -7,51 +7,14 @@
 @import "./styles/fonts";
 @import "./styles/base";
 
-html,
-body {
-  font-size: 16px;
-}
-
 header {
-  font-size: 30px;
-  display: flex;
-  justify-content: space-between;
-  nav {
-    display: none;
+  background-color: darkcyan;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
   }
-  padding: 15px;
-}
-
-// valeur classiques
-/* Medium devices (landscape tablets) */
-@media only screen and (min-width: 768px) {
-  header {
-    nav {
-      display: block;
-    }
-    .menu-burger {
-      display: none;
-    }
-  }
-}
-
-/* Large devices (laptops/desktops) */
-@media only screen and (min-width: 992px) {
-}
-
-/* Extra large devices (large laptops) */
-@media only screen and (min-width: 1200px) {
-}
-
-.carte-container {
-  display: flex;
-}
-
-.carte {
-  background-color: rgba(255, 255, 255, 0.5);
-  width: 20%;
-  height: auto;
-}
-.carte:nth-of-type(3) {
-  flex-grow: 1;
 }
